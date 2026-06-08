@@ -12,17 +12,26 @@ public class SeizaUranai implements FortuneTelling {
     @Override
     public String getMessage(Result result) {
         String message = null;
-        if(result == Result.ITE) {
-            message = "大変幸運です。均先生の星座です。";
+        if(result == Result.DAIKICHI) {
+            message = "いて座です。大変幸運です。均先生の星座です。";
         }
-        else if(result == Result.SASORI) {
-            message = "女性に気を付けてください。特にさそり座の女性には。";
+        else if(result == Result.KICHI) {
+            message = "さそり座です。これまた幸運です。さそりの女性に巡り合えます。";
         }
-        else if(result == Result.HAKUTYO) {
-            message = "明るい明日がまっています。大空に向けて羽ばたこう。";
+        else if(result == Result.CHUKICHI) {
+            message = "はくちょう座です。明るい明日に向かって何にでも挑戦してください。";
+        }
+        else if(result == Result.SHOKICHI) {
+            message = "オリオン座です。勉強が進みます。均先生が最初に覚えた星座です。";
+        }
+        else if(result == Result.SUEKICHI) {
+            message = "こぐま座です。小熊に遭遇しないよう気を付けてください。";
+        }
+        else if(result == Result.KYOU) {
+            message = "おおぐま座です。熊に遭遇するかもしれません。外出は避けましょう";
         }
         else {   
-            message = "なにかきっかけをみつけましょう。";
+            message = "気合を入れて明日の活力をためましょう";
         }
        
         return message;
